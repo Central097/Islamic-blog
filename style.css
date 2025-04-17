@@ -1,0 +1,485 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9fafb;
+    color: #222;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #023047;
+    color: #fff;
+    padding: 25px 0;
+    text-align: center;
+  }
+  
+  nav a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f0f4f8;
+  }
+  
+  .hero h2 {
+    font-size: 2em;
+    color: #014f86;
+  }
+  
+  .hero p {
+    font-size: 1.1em;
+    margin: 20px 0;
+  }
+  
+  .btn {
+    background-color: #02735E;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+  }
+  
+  .btn:hover {
+    background-color: #01543f;
+  }
+  
+  footer {
+    background-color: #ddd;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9em;
+  }
+  .blog-post {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .blog-posts {
+    padding: 20px;
+  }
+  
+  .blog-posts h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+  }
+  
+  .post {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .post h3 {
+    color: #27ae60;
+  }
+  
+  .post .date {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+  }
+  
+  .post p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .post a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+  }
+  
+  7/* Navigation Menu */
+.navbar {
+  background-color: #1c1c1c;
+  padding: 10px;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.navbar a:hover {
+  color: #ffd700;
+}
+/* Search Bar */
+.search-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.search-container input {
+  padding: 10px;
+  width: 300px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+}
+
+.search-container button {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  background-color: #1c1c1c;
+  color: white;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background-color: #ffd700;
+}
+/* Sidebar */
+.sidebar {
+  background-color: #f8f8f8;
+  padding: 20px;
+  width: 250px;
+  float: right;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.sidebar h3 {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #1c1c1c;
+  font-weight: bold;
+}
+
+.sidebar ul li a:hover {
+  color: #ffd700;
+}
+/* Sidebar Styles */
+.sidebar {
+  background-color: #f8f8f8;
+  padding: 20px;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  right: -250px; /* Start hidden off-screen */
+  height: 100%;
+  transition: right 0.3s ease-in-out; /* Smooth transition */
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar h3 {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #1c1c1c;
+  font-weight: bold;
+}
+
+.sidebar ul li a:hover {
+  color: #ffd700;
+}
+
+/* Button Styles */
+.sidebar-toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: #008CBA;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.sidebar-toggle:hover {
+  background-color: #005f6b;
+}
+/* Mobile Devices */
+@media (max-width: 768px) {
+  /* Adjust layout for mobile screens */
+  .header h1 {
+    font-size: 2.5em;
+  }
+
+  .header p {
+    font-size: 1em;
+  }
+
+  .container {
+    margin: 20px;
+    padding: 10px;
+  }
+
+  /* Adjust Sidebar */
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+
+  /* Make the blog posts stack vertically */
+  .blog-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .blog-post {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Contact form inputs */
+  .form-container input,
+  .form-container textarea {
+    font-size: 1em;
+  }
+
+  .form-container button {
+    width: 100%;
+  }
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.hadith {
+  background-color: white;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.hadith h2 {
+  color: #333;
+}
+
+.hadith p {
+  color: #555;
+}
+/* General body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9; /* Soft background */
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Container for the Hadith section */
+.hadith-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 
+/* General body styling */
+body {
+  font-family: 'Arial', sans-serif; /* Clean and simple font */
+  background-color: #f4f4f9; /* Soft, light background */
+  color: #333; /* Dark text for readability */
+  margin: 0;
+  padding: 0;
+  line-height: 1.8;
+}
+
+/* Header styling */
+h1, h2 {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: #2c3e50; /* Darker color for headers */
+  margin-top: 20px;
+}
+
+/* Container for the entire Hadiths section */
+.hadith-container {
+  width: 80%;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #ffffff; /* White background for the content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Styling individual Hadith */
+.hadith {
+  background-color: #f9f9f9; /* Slightly off-white background */
+  margin: 20px 0;
+  padding: 20px;
+  border-left: 5px solid #2980b9; /* Blue accent on the left */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the Hadith header */
+.hadith h2 {
+  font-size: 20px;
+  color: #2980b9;
+  margin-bottom: 10px;
+}
+
+/* Arabic text styling */
+.hadith p strong {
+  font-size: 18px;
+  color: #16a085; /* Green color for Arabic text */
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Transliteration and translation text */
+.hadith p {
+  font-size: 16px;
+  color: #333; /* Dark text for readability */
+  margin-bottom: 10px;
+}
+
+/* Add space after each Hadith */
+.hadith:last-child {
+  margin-bottom: 40px; /* Space after the last Hadith */
+}
+
+/* Source styling */
+.hadith p:last-of-type {
+  font-style: italic;
+  font-size: 14px;
+  color: #7f8c8d; /* Light grey color */
+}
+
+/* Styling for mobile devices */
+@media screen and (max-width: 768px) {
+  .hadith-container {
+      width: 95%; /* Reduce width on smaller screens */
+      padding: 15px;
+  }
+
+  .hadith {
+      padding: 15px;
+      font-size: 14px; /* Slightly smaller font size on mobile */
+  }/* Qibla Direction Section */
+.qibla-container {
+  text-align: center;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.qibla-container h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.qibla-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.qibla-container button:hover {
+  background-color: #218838;
+}
+
+.qibla-direction {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #333;
+}
+
+.compass {
+  width: 150px;
+  height: 150px;
+  margin-top: 30px;
+  transition: transform 0.5s ease-in-out;
+}
+
+
+  h2 {
+      font-size: 18px;
+  }
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 10px 0;
+  background-color: #2980b9;
+  color: white;
+  font-size: 14px;
+}
+
+  
